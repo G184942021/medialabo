@@ -18,14 +18,14 @@ function hantei() {
     //        ページに表示する方法はまだ習っていないので
     //        判定結果はコンソールに出力すること
     kaisu++;
-    console.log(kaisu + '回目の予想: ' + yoso);
+    (kaisu +"回目"+ yoso);
     if (3 > kaisu) {
         if (kotae === yoso) {
-            console.log("正解です．おめでとう!");
+            ("正解です．おめでとう!");
         } else if (kotae < yoso) {
-            console.log("まちがい．答えはもっと大きいですよ");
+            ("まちがい．答えはもっと大きいですよ");
         } else {
-            console.log("まちがい．答えはもっと小さいですよ");
+            ("まちがい．答えはもっと小さいですよ");
         }
     } else if (3 === kaisu) {
         if (kotae === yoso) {
@@ -37,3 +37,4 @@ function hantei() {
         console.log("答えは " + kotae + " でした。すでにゲームは終わっています");
     }
 }
+let kotae = document.querySelector('p');

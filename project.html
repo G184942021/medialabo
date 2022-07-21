@@ -7,53 +7,22 @@
     <title>世界の天気</title>
     <script src="project.js" defer></script>
     <link rel="stylesheet" href="project.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
 </head>
-<body>
     <h1>世界の天気</h1>
-    <p><input type="text" name="suuzi" id="suuzi" size="10"> <button id="botan">国名</button></p>
-    <p>https://www.nishita-lab.org/web-contents/jsons/openweather/2643743.json</p>
-    <table border = "1">
-        <tr>
-            <th>ID</th><th>国名</th>
-        </tr>
-        <tr>
-            <th>360630</th><th>Cairo カイロ （エジプト）</th>
-        </tr>
-        <tr>
-            <th>524901</th><th>Moscow モスクワ （ロシア）</th>
-        </tr>
-        <tr>
-            <th>993800</th><th>Johannesburg ヨハネスブルク</th>
-        </tr>
-        <tr>
-            <th>1816670</th><th>Beijing 北京 （中華人民共和国）</th>
-        </tr>
-        <tr>
-            <th>1850147</th><th>Tokyo 東京 （日本）</th>
-        </tr>
-        <tr>
-            <th>1880252</th><th>Singapore シンガポール</th>
-        </tr>
-        <tr>
-            <th>2147714</th><th>Sydney シドニー （オーストラリア）</th>
-        </tr>
-        <tr>
-            <th>2643743</th><th>London ロンドン （イギリス）</th>
-        </tr>
-        <tr>
-            <th>2968815</th><th>Paris パリ （フランス）</th>
-        </tr>
-        <tr>
-            <th>3451189</th><th>Rio de Janeiro リオデジャネイロ （ブラジル）</th>
-        </tr>
-        <tr>
-            <th>5128581</th><th>New York ニューヨーク （アメリカ合衆国）</th>
-        </tr>
-                <tr>
-            <th>5368361</th><th> Los Angeles ロサンゼルス （アメリカ合衆国）</th>
-        </tr>
-        
-    </table>
-    <script src="weather.js" defer></script>
+    <h2>国旗(市旗)をお選びください。</h2>
+    <img id = "EG" src="EGL.GIF" class="flag" alt="エジプト">
+    <img src="RUL.GIF" class="flag" alt="ロシア">
+    <img src="ZAL.GIF" class="flag" alt="南アフリカ">
+    <img src="CNL.GIF" class="flag" alt="中国">
+    <img src="JPL.GIF" class="flag" alt="日本">
+    <img src="SGL.GIF" class="flag" alt="シンガポール">
+    <img src="AUL.GIF" class="flag" alt="オーストラリア">
+    <img src="GBL.GIF" class="flag" alt="イギリス">
+    <img src="ITL.GIF" class="flag" alt="イタリア">
+    <img src="BRL.GIF" class="flag" alt="ブラジル">
+    <img src="255px-Flag_of_New_York_City.svg.png"class="flag" alt="ニューヨーク">
+    <img src="R.jpg" class="flag" alt="ロサンゼルス">
+    <p id = "ABC"></p>
 </body>
 </html>

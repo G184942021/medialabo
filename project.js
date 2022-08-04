@@ -112,13 +112,16 @@ function showResult(resp) {
         data = JSON.parse(data);
     }
 
-    let X = document.querySelector("p#TENKI");
-    X.textContent = data.weather.description;
+    let W = document.querySelector("span#name");
+    W.textContent = data.name;
 
-    let Y = document.querySelector("p#MAX");
+    let X = document.querySelector("span#TENKI");
+    X.textContent = data.weather[0].description;
+
+    let Y = document.querySelector("span#MAX");
     Y.textContent = data.main.temp_max;
 
-    let Z = document.querySelector("p#MIN");
+    let Z = document.querySelector("span#MIN");
     Z.textContent = data.main.temp_min;
 
     // data をコンソールに出力
